@@ -49,6 +49,10 @@ android {
                 .get()
                 .toInt()
 
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
+
         vectorDrawables.useSupportLibrary = true
 
         androidResources.localeFilters.addAll(getListOfSupportedLocales())

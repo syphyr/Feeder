@@ -40,6 +40,10 @@ android {
         minSdk = 23
         targetSdk = 35
 
+        ndk {
+            abiFilters += listOf("arm64-v8a")
+        }
+
         vectorDrawables.useSupportLibrary = true
 
         androidResources.localeFilters.addAll(getListOfSupportedLocales())

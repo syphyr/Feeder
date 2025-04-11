@@ -129,12 +129,6 @@ android {
                 dimension = "store"
                 // Keeping default version values for F-Droid
             }
-            create("play") {
-                dimension = "store"
-                versionName = "2.26.0"
-                versionCode = project.extra["commitCount"] as Int?
-                applicationIdSuffix = ".play"
-            }
         }
     }
     testOptions {

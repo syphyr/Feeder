@@ -34,11 +34,10 @@ android {
     defaultConfig {
         applicationId = "com.nononsenseapps.feeder"
         // The version fields are set with actual values to support F-Droid
-        // In Play variant, they are overridden and taken from git.
+        // In Play variant, they are overriden and taken from git.
         versionCode = 3691
         versionName = "2.11.5"
-        // TLS1.3 is enabled in Android 10 (29) and above
-        minSdk = 29
+        minSdk = 23
         targetSdk = 35
 
         ndk {

@@ -42,8 +42,7 @@ android {
         // For actual releases they match.
         versionCode = 4025
         versionName = "2.21.1"
-        // TLS1.3 is enabled in Android 10 (29) and above
-        minSdk = 29
+        minSdk = 23
         targetSdk =
             libs.versions.compileSdk
                 .get()

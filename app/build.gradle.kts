@@ -40,8 +40,7 @@ android {
         // For actual releases they match.
         versionCode = 3764
         versionName = "2.13.0"
-        // TLS1.3 is enabled in Android 10 (29) and above
-        minSdk = 29
+        minSdk = 23
         targetSdk = 35
 
         ndk {

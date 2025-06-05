@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.provider.Browser
 import android.util.Log
 import android.widget.Toast
@@ -21,6 +22,7 @@ class ActivityLauncher(
 
     private fun Intent.openAdjacentIfSuitable(openAdjacentIfSuitable: Boolean): Intent =
         if (openAdjacentIfSuitable &&
+            Build.VERSION.SDK_INT >= Build.VERSION_CODES.N &&
             configuration.smallestScreenWidthDp >= 600 &&
             repository.isOpenAdjacent.value
         ) {

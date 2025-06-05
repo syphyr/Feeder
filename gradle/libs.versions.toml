@@ -10,14 +10,13 @@ compileSdk = "36"
 # BEGIN These should be upgraded in unison. See https://square.github.io/okhttp/changelogs/changelog_4x/
 okhttp = "5.1.0"
 okio = "3.16.2"
-# 2.5.3 and above are 16kb aligned
-conscrypt = "2.5.3"
+conscrypt = "2.5.2"
 # END Unison
 ktlint-gradle = "13.1.0"
 ktlint-compose = "0.4.24"
 kodein = "7.28.0"
 coroutines = "1.10.2"
-gofeed = "0.2.0"
+gofeed = "0.1.3"
 moshi = "1.15.2"
 desugar = "2.1.5"
 jsoup = "1.21.2"

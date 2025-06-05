@@ -64,7 +64,9 @@ suspend fun notify(
         return@withContext
     }
 
-    createNotificationChannel(appContext)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        createNotificationChannel(appContext)
+    }
 
     val di by closestDI(appContext)
 
@@ -113,6 +115,10 @@ suspend fun cancelNotifications(
 
     for (feedItemId in feedItemIds) {
         nm.cancel(feedItemId.toInt())
+    }
+
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+        notify(context)
     }
 }
 
